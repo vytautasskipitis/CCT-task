@@ -44,7 +44,7 @@ if __name__ == "__main__":
     assert find_maximum_distance(number_of_cities=3, cities_with_train_station=[1]) == 1
     assert find_maximum_distance(number_of_cities=4, cities_with_train_station=[3]) == 3
     assert find_maximum_distance(number_of_cities=5, cities_with_train_station=[0, 4]) == 2
-    assert find_maximum_distance(number_of_cities=30, cities_with_train_station=[0, 4, 15, 22, 26]) == 6
+    assert find_maximum_distance(number_of_cities=30, cities_with_train_station=[0, 4, 15, 22, 26]) == 5
     assert find_maximum_distance(number_of_cities=10, cities_with_train_station=[2, 8]) == 3
 
     print("ALL TESTS PASSED")
