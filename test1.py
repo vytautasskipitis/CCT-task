@@ -1,4 +1,5 @@
 from typing import List
+import math
 
 
 def find_maximum_distance(
@@ -16,8 +17,8 @@ def find_maximum_distance(
             distance += 1
 
             if i in cities_with_train_station:
-                print(round(distance), "km to the station")
-                longest_distance.append(round(distance))
+                print(math.trunc(distance), "km to the station")
+                longest_distance.append(math.trunc(distance))
                 distance = 0
                 two_directions = True
 
@@ -25,8 +26,8 @@ def find_maximum_distance(
             distance += 0.5
 
             if i in cities_with_train_station:
-                print(round(distance), "km to the station")
-                longest_distance.append(round(distance))
+                print(math.trunc(distance), "km to the station")
+                longest_distance.append(math.trunc(distance))
                 distance = 0
             if cities_with_train_station[-1] == i:
                 two_directions = False
